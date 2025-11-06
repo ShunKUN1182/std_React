@@ -1,10 +1,10 @@
-const arry = ["配列1", "配列2", "配列3"];
-console.log(arry[0]);
-console.log(arry[2]);
+// const [a,b,c] = ["配列1", "配列2", "配列3"];
+// console.log(b);
+// console.log(c);
 
-const obj = { x: "オブジェクト1", y: "オブジェクト2", z: "オブジェクト3" };
-console.log(obj.x);
-console.log(obj.y);
+// const {x,z} = { x: "オブジェクト1", y: "オブジェクト2", z: "オブジェクト3" };
+// console.log(x);
+// console.log(z);
 
 const arr = ["Japan", "Tokyo", "Shinjuku"];
 const objAddress = { country: "Japan", state: "Tokyo", city: "Shinjuku" };
