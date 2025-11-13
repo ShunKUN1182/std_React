@@ -1,7 +1,7 @@
-import { List } from "./list";
+import { List } from "./List";
 import "./Child.css";
 
-const Example = () => {
+const Child = () => {
   return (
     <div className="component">
       <h3>Hello Component</h3>
