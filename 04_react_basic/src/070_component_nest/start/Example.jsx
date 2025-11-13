@@ -1,4 +1,3 @@
-import "./Example.css";
 import Child from "./components/Child.jsx"
 
 const Example = () => {
