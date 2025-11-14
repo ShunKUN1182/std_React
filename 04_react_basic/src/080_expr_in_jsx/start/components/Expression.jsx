@@ -1,8 +1,8 @@
 import "./Expression.css";
 
-const Expression = () =>{
+const Expression = () => {
     const title = "Expression";
-    const arry = ["item1" , "item2" , "item3"];
+    const arry = ["item1", "item2", "item3"];
     const hello = (arg) => `${arg} Function`;
     const jsx = <h3>Hello JSX</h3>;
     const bool = true;
@@ -16,7 +16,7 @@ const Expression = () =>{
             {jsx}
             {bool}
         </div>
-    )
-}
+    );
+};
 
 export default Expression;
