@@ -6,7 +6,6 @@ const Example = () => {
     console.log("再レンダリングされました");
     return (
         <>
-            <p>aaaaa</p>
             <input
                 type="text"
                 onChange={(e) => {
