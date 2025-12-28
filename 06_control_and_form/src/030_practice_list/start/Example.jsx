@@ -1,12 +1,31 @@
 import Profile from "./components/Profile";
+const persons = [
+    {
+        name: "Geo",
+        age: 18,
+        hobbies: ["sports", "music"],
+    },
+    {
+        name: "Tom",
+        age: 25,
+        hobbies: ["movie", "music"],
+    },
+    {
+        name: "Lisa",
+        age: 21,
+        hobbies: ["sports", "travel", "game"],
+    },
+];
 
 const Example = () => {
     return (
         <>
             <ul>
-                <li>
-                    <Profile name="a" age={20} hobbies={["c", "d"]} />
-                </li>
+                {persons.map((person) => (
+                    <li>
+                        <Profile {...person} />
+                    </li>
+                ))}
             </ul>
         </>
     );
