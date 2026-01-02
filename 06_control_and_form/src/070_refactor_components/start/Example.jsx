@@ -13,7 +13,7 @@ const Example = () => {
 
     return (
         <>
-            <AnimalFilter filterState={(filterVal, setFilterVal)} />
+            <AnimalFilter filterState={[filterVal, setFilterVal]} />
             <AnimalList animals={filterdAnimals} />
         </>
     );
