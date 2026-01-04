@@ -6,16 +6,20 @@ const Form = ({ createTodo }) => {
         setEntaredTodo(e.target.value);
     };
     const addTodo = (e) => {
+        e.preventDefault();
         const newTodo = {
             id: Math.floor(Math.random() * 1e5),
             content: entaredTodo,
         };
         createTodo(newTodo);
+        setEntaredTodo("");
     };
     return (
         <div>
-            <input type="text" value={entaredTodo} onChange={(e) => changeTodo(e)} />
-            <button onClick={addTodo}>追加</button>
+            <form onSubmit={addTodo}>
+                <input type="text" value={entaredTodo} onChange={(e) => changeTodo(e)} />
+                <button onClick={addTodo}>追加</button>
+            </form>
         </div>
     );
 };
